@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form method='POST' action='{{ url_for('formatt')}}'>
+      {{ form.csrf_taken }}
+      {{ form.user.label }}
+      {{ form.user }}
+      {{ form.email.label }}
+      {{ form.email }}
+      {{ form.pasw.label }}
+      {{ form.pasw}}
+      {{ form.recaptcha}}
+      {{ form.dob}}
+  </body>
+</html>
